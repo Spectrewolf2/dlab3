@@ -1,0 +1,9 @@
+FROM ubuntu:latest
+
+WORKDIR /usr/src/app
+
+COPY auth.sh .
+
+RUN chmod +x auth.sh
+
+CMD ["./auth.sh"]
